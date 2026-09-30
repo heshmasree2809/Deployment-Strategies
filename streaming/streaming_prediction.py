@@ -3,10 +3,8 @@ import pandas as pd
 import time
 model = joblib.load("../kidney_disease_model.pkl")
 df = pd.read_csv("../kidney_disease.csv")
-
 for i in range(10):
     row = df.iloc[[i]]
-
     X = row.drop(columns=["classification", "id"])
 
     prediction = model.predict(X)
