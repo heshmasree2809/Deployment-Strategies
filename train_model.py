@@ -8,9 +8,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
-
 DATA_FILE = "kidney_disease.csv"
-
 df = pd.read_csv(DATA_FILE)
 
 print("Dataset loaded successfully.")
